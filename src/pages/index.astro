@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import headshot from '~/assets/images/headshot.jpg';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
@@ -76,7 +77,9 @@ const teachingItems = [
     actions={[{ variant: 'primary', text: 'CV', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      PhD-trained machine learning researcher from McGill University developing multi-omics causal-discovery and patient-specific survival-prediction frameworks that boost accuracy, simplify interpretation of large models and slash runtimes tenfold.
+      PhD-trained machine learning researcher from McGill University developing multi-omics 
+      causal-discovery and patient-specific survival-prediction frameworks that boost accuracy, 
+      simplify interpretation of large models and slash runtimes tenfold.
     </Fragment>
   </Hero>
 
@@ -91,21 +94,21 @@ const teachingItems = [
         callToAction: {
           target: '_blank',
           text: 'GitHub',
-          href: '#',
+          href: 'https://github.com/Jesse-Islam',
         },
       },
       {
         icon: 'tabler:brand-linkedin',
         callToAction: {
           target: '_blank',
-          text: 'Behance',
-          href: '#',
+          text: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/jesse-islam-154122140/',
         },
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Colorful Image',
+      src: headshot,
+      alt: 'Jesse Islam photo',
       loading: 'eager',
     }}
   >
