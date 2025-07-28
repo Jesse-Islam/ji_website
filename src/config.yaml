@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Jesse Islam
+  site: 'https://www.jesseislam.com'
   base: '/'
   trailingSlash: false
 
@@ -10,8 +10,8 @@ site:
 metadata:
   title:
     default: Jesse Islam
-    template: '%s — AstroWind'
-  description: "\U0001F680 Porfolio Based on Astrowind."
+    template: '%s'
+  description: "\U0001F680 Porfolio website for Jesse Islam."
   robots:
     index: true
     follow: true
@@ -22,10 +22,7 @@ metadata:
         width: 1200
         height: 628
     type: website
-  twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
-    cardType: summary_large_image
+
 
 i18n:
   language: en
