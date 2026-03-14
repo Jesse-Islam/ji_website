@@ -1,0 +1,35 @@
+---
+/* src/pages/lite-apps.astro */
+import Layout from '~/layouts/PageLayout.astro';
+import Headline from '~/components/ui/Headline.astro';
+import AppCard from '~/components/ui/AppCard.astro';
+
+const metadata = {
+  title: 'Lite Apps | Jesse Islam',
+};
+
+// Define your apps once, inside the frontmatter
+const apps = [
+  {
+    title: 'Mnemos Flashcards',
+    description: 'A minimalist strictly offline flashcard app with LaTeX and TTS support.',
+    href: 'https://jesse-islam.github.io/mnemos/',
+    github: 'https://github.com/Jesse-Islam/mnemos',
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
+    <Headline
+      title="Lite Apps"
+      subtitle="Fast, privacy-focused, single-page utilities that run entirely on your device."
+    />
+
+    <div class="grid gap-6">
+      {apps.map((app) => (
+        <AppCard {...app} />
+      ))}
+    </div>
+  </section>
+</Layout>

@@ -24,6 +24,7 @@ export const headerData = {
         },
       ],
     },
+
   ],
   actions: [{ text: 'Cloud CV', href: 'https://www.jesseislam.com', target: '_blank' }],
 };
